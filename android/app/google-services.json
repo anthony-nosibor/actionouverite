@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "204665532895",
+    "project_id": "actionverite-39d08",
+    "storage_bucket": "actionverite-39d08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204665532895:android:aaa98a67aaa535c7c1146a",
+        "android_client_info": {
+          "package_name": "com.actionverite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204665532895-ebhvj93i2iaallp4eulboclujcjl05jm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHj2VL_CGj8aT5Sirp4plCgXJ60MX-Jbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204665532895-ebhvj93i2iaallp4eulboclujcjl05jm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
