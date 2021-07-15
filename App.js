@@ -8,38 +8,27 @@ import { FirebaseContext } from './FirebaseContext' ;
 
 import Inscription from './Components/Inscription';
 import Connexion from './Components/Connexion';
+import Accueil from './Components/Accueil';
 import Participant from './Components/Participant';
 import SaisieJoueur from './Components/SaisieJoueur';
+import Partie from './Components/Partie';
 
 
 
 const Stack = createStackNavigator();
-const Tab = createBottomTabNavigator();
 
 const App = ({navigation}) => {
-    const {auth} = useContext(FirebaseContext) ;
-    const [user, setUser] = useState(null) ;
-    
-        useEffect(() => {
-          // dispatch(addNavigation())
-          const authChange = auth.onAuthStateChanged(userAuth=>{
-            setUser(userAuth)
-            console.log('userAuth', userAuth)
-          })
-          return () => {
-            authChange
-          }
-        }, [])
+
   return (
     <NavigationContainer>
   
-            <Stack.Navigator  screenOptions={{
-                              headerShown: false
-        }}>
-              <>
-              <Stack.Screen name="Participant" component={Participant} /> 
-              <Stack.Screen name="SaisieJoueur" component={SaisieJoueur} /> 
-              </>
+            <Stack.Navigator  >
+              
+              <Stack.Screen options={{ headerShown: false }} name="Accueil" component={Accueil} />
+              <Stack.Screen options={{ headerShown: false }} name="Participant" component={Participant} /> 
+              <Stack.Screen options={{ headerShown: false }} name="SaisieJoueur" component={SaisieJoueur} />
+              <Stack.Screen options={{ headerShown: false }} name="Partie" component={Partie} />  
+            
             </Stack.Navigator>
     
     
