@@ -1,9 +1,9 @@
 import {ADD_NUMB_PLAYER} from '../Actions/types' ;
 
 
-initStateNumbPlayer = "";
+initStateNumbPlayer = 0;
 
-const numbplayers = (state = initStateNumbPlayer, action) => {
+const nombreJoueurs = (state = initStateNumbPlayer, action) => {
    switch (action.type) {
        case ADD_NUMB_PLAYER:
            return  action.payload ;
@@ -16,4 +16,4 @@ const numbplayers = (state = initStateNumbPlayer, action) => {
    }
 }
 
-export default numbplayers
+export default nombreJoueurs

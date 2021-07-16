@@ -1,5 +1,5 @@
 import React, { useState  } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, ImageBackground } from 'react-native';
 import { Button, Divider, Input   } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import  { useSelector, useDispatch } from 'react-redux';
@@ -9,7 +9,7 @@ import { addNumbPlayer } from '../../Redux/Actions/nombreJoueurs';
 const index = ({navigation}) => {
 
     const [number, setNumber] = useState(null);
-    const {numbplayers} = useSelector(state => state);
+    const {nombreJoueurs} = useSelector(state => state);
 
     const dispatch = useDispatch() ;
 
@@ -21,8 +21,13 @@ const index = ({navigation}) => {
     };
 
     return (
-        <View>
-            <Text style= {{    fontSize: 15,
+        <View >
+            <ImageBackground source={ require('../../images/foule.jpg')}
+                            style={{resizeMode:'cover',
+                                    width:'100%',
+                                    height:'100%',
+                                    alignItems:'center'}}>
+            <Text style= {{    fontSize: 20,
                                fontWeight: "bold",
                                fontFamily: "Cochin",
                                marginBottom:30
@@ -46,12 +51,13 @@ const index = ({navigation}) => {
               buttonStyle=  {{
                   width:"50%",
                   marginBottom:10,
-                  borderRadius:11
+                  borderRadius:11,
+                  justifyContent:'center',
                 }}
               title="Valider"
               onPress={validate}
               /> 
-              
+            </ImageBackground>  
         </View>
     )
 }

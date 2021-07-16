@@ -1,7 +1,9 @@
 import {combineReducers} from "redux" ;
-import listplayer from "./listplayer" ;
+import listPlayer from "./listplayer" ;
 import modal from "./modal" ;
 import nombreJoueurs from './nombreJoueurs' ;
 import navigation from './navigation' ;
+import questions from './questions' ;
 
-export default combineReducers({listplayer, modal, nombreJoueurs,navigation }) ;
+
+export default combineReducers({listPlayer, modal, nombreJoueurs,navigation, questions }) ;
