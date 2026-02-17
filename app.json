@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "Action Ou Vérité - Lettre de voiture",
+    "slug": "actionouverite",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {},
+    "web": {}
+  }
+}
