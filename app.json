@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "Lettre de voiture",
+    "slug": "lettre-de-voiture",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {},
+    "web": {}
+  }
+}
