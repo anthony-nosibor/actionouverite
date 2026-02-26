@@ -1,4 +1,4 @@
-# ActionOuVérité - Lettre de voiture (Expo + Firebase)
+# Lettre de voiture (Expo + Firebase)
 
 Application mobile React Native (Expo) pour gérer des lettres de voiture dans le cadre de livraisons de médicaments à domicile.
 

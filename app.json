@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Action Ou Vérité - Lettre de voiture",
-    "slug": "actionouverite",
+    "name": "Lettre de voiture",
+    "slug": "lettre-de-voiture",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
